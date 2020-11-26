@@ -21,14 +21,14 @@
 
 To create a python venv enter the command below.
 
-> `python -m venv venv`
+`python -m venv venv`
 
 <br>
 
 **General Steps :**
 
 We have to just install all the dependencies by entering the command below and then we are good to go.
-> ``pip install -r requirements.txt``
+``pip install -r requirements.txt``
 
 ## Usage :
 
@@ -42,8 +42,7 @@ We have to just install all the dependencies by entering the command below and t
 **_If you are on Linux_ :**
 `venv/Scripts/activate`
 
-- Then run the main.py file.
-
-> `python main.py`
+- Then run the main.py file by 
+`python main.py`
 
 - This will ask the contest URL _(eg: https://codeforces.com/contest/1452)_ and the absolute location _(eg: C:\\Users\\test\\Downloads\\cp_companion)_ where you want to store the sample-testcases folder.<br><br> **Note : Don't give the relative path as an input** 
