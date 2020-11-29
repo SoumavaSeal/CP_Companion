@@ -1,1 +1,5 @@
 venv/
+sample-test/
+*.exe
+*.txt
+__pycache__/

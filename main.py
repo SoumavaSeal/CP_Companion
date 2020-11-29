@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import os
 
-loc = input("Enter the base location : ")
+loc = os.getcwd()
 url = input("Enter the url : " )
 
 os.chdir(loc)
@@ -50,7 +50,7 @@ for link in links:
     for inp in inputs:
         name = str(i) + ".txt"
         f = open(name, "w")
-        f.write(inp.find('pre').text)
+        f.write(inp.find('pre').text[1:])
         i += 1
 
     outputs = sample.find_all('div', {'class': 'output'})
@@ -64,5 +64,5 @@ for link in links:
     for out in outputs:
         name = str(i) + ".txt"
         f = open(name, "w")
-        f.write(out.find('pre').text)
+        f.write(out.find('pre').text[1:])
         i += 1
