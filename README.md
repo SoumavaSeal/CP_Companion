@@ -40,7 +40,7 @@ We have to just install all the dependencies by entering the command below and t
 `venv\Scripts\activate`
 
 **_If you are on Linux_ :**
-`venv/Scripts/activate`
+`source venv/Scripts/activate`
 
 - Then run the main.py file by 
 `python main.py`
