@@ -23,7 +23,7 @@ for i in range(1, len(prblms)):
 if(len(links)>0):
     os.system("mkdir sample-test")
 
-os.chdir(".\\sample-test")
+os.chdir("./sample-test")
 
 base_dir = os.getcwd()
     
@@ -32,7 +32,7 @@ for link in links:
 
     os.chdir(base_dir)
     os.system("mkdir " + p[len(p) - 1])
-    os.chdir(base_dir + "\\" + p[len(p) - 1])
+    os.chdir(base_dir + "/" + p[len(p) - 1])
 
     cur = base + link
     res1 = requests.get(cur)
@@ -45,7 +45,7 @@ for link in links:
     i = 0
 
     os.mkdir("inputs")
-    os.chdir(base_dir + "\\" + p[len(p) - 1] + "\\inputs")
+    os.chdir(base_dir + "/" + p[len(p) - 1] + "/inputs")
 
     for inp in inputs:
         name = str(i) + ".txt"
@@ -57,9 +57,9 @@ for link in links:
 
     i = 0
 
-    os.chdir(base_dir + "\\" + p[len(p) - 1])
+    os.chdir(base_dir + "/" + p[len(p) - 1])
     os.mkdir("outputs")
-    os.chdir(base_dir + "\\" + p[len(p) - 1] + "\\outputs")
+    os.chdir(base_dir + "/" + p[len(p) - 1] + "/outputs")
 
     for out in outputs:
         name = str(i) + ".txt"
